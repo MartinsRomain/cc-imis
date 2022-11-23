@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>imis.Contact</title>
+</head>
+<body>
+
+<form th:action="@{/createContact}" method="post">
+    <p>Nom : <input type="text" name="nom"/></p>
+    <p>Prenom : <input type="text" name="prenom"/></p>
+    <p>Email : <input type="text" name="email"/></p>
+    <p>tel : <input type="text" name="telephone"/></p>
+    <p>entities.Entreprise : <select  name="entreprise">
+        <option th:each="entr : ${entreprises}" th:value="${entr.siret}" th:text="${entr.nom}"/>
+    </select></p>
+    <p>entities.Fonction : <select  name="fonction">
+        <option th:each="fonction : ${fonctions}" th:value="${fonction.idFonction}" th:text="${fonction.intituleFonction}"/>
+    </select></p>
+    <button type="submit">creer</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>imis.Entreprise</title>
+</head>
+<body>
+
+<form th:action="@{/createEntreprise}" method="post">
+    <p>Siret : <input type="text" name="siret"/></p>
+    <p>Nom : <input type="text" name="nom"/></p>
+    <p>Adresse : <input type="text" name="adresse"/></p>
+
+    <button type="submit">creer</button>
+</form>
+
+</body>
+</html>

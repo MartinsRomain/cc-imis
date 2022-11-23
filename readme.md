@@ -30,7 +30,7 @@ Consignes
 -
 
 - Les FETCH EAGER sont interdits
-- Vous devez compléter les entities et les services.
+- Vous devez compléter les imis.entities et les imis.services.
 - Vous devez ajouter dans les pages web les morceaux manquants (essentiellement accès aux champs).
 - Dans le contrôleur les méthodes sont fournies mais vous devez les compléter.
 - Il n'y a a prori rien à faire dans les vues.

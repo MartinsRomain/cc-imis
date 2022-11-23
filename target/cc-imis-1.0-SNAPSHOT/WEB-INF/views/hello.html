@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IMIS</title>
+</head>
+<body>
+
+<form th:action="@{/createEntreprise}" method="get">
+    <button type="submit">créer entreprise</button>
+</form>
+
+<form th:action="@{/createFonction}" method="get">
+    <button type="submit">créer fonction</button>
+</form>
+
+<form th:action="@{/createContact}" method="get">
+    <button type="submit">créer contact</button>
+</form>
+
+
+<form th:action="@{/plusContact}">
+   <button type="submit">plusContact</button>
+</form>
+
+<form th:action="@{/parMotCle}" method="post">
+    Mot-clé : <input type="text" name="motcle"/>
+    <button type="submit">recherche par mot clé</button>
+</form>
+
+</body>
+</html>

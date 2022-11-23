@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Entreprises par mot clé</title>
+</head>
+<body>
+
+Mot clé cherché : <span th:text="${motcle}"/>
+<ul>
+    <li th:each="entr : ${entreprises}" th:text="${entr.nom}"/>
+</ul>
+
+
+<form th:action="@{/}">
+    <button type="submit">retour accueil</button>
+</form>
+
+</body>
+</html>
